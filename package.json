@@ -7,7 +7,8 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
-        "format": "eslint --fix . && prettier --write ."
+        "format": "eslint --fix . && prettier --write .",
+        "lint": "eslint . && prettier --check ."
     },
     "dependencies": {
         "react": "^18.2.0",
@@ -21,6 +22,7 @@
         "@vitejs/plugin-react": "^3.1.0",
         "eslint": "^8.35.0",
         "eslint-plugin-react": "^7.32.2",
+        "husky": "^8.0.3",
         "prettier": "2.8.4",
         "typescript": "^4.9.3",
         "vite": "^4.1.0"
