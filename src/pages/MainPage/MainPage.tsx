@@ -1,7 +1,7 @@
 import React from 'react'
 import img from '../../assets/AM7BH-Vjf.jpg'
 import logo from '../../assets/Logo.png'
-import '../../app.scss'
+import './app.scss'
 import styles from './index.module.scss'
 import CardList from '../../components/CardList/CardList'
 
