@@ -1,0 +1,18 @@
+.block {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+        0px 2px 4px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: 2.3fr 1fr;
+    aspect-ratio: 1/1.05;
+}
+
+.blockImage {
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    margin-top: -33px;
+}

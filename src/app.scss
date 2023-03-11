@@ -1,0 +1,68 @@
+$font-family-roboto: 'Roboto';
+$font-family-karla: 'Karla';
+
+.f {
+    font-family: $font-family-roboto, sans-serif;
+    font-weight: 400;
+}
+.s {
+    font-family: $font-family-roboto, sans-serif;
+    font-weight: 500;
+}
+.t {
+    font-family: $font-family-roboto, sans-serif;
+    font-weight: 700;
+}
+.fo {
+    font-family: $font-family-karla, sans-serif;
+    font-weight: 700;
+}
+
+.logo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    align-self: center;
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        max-width: 100%;
+    }
+}
+
+.input {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    gap: 20px;
+    margin-top: 50px;
+    align-items: stretch;
+}
+
+@media screen and (max-width: 1020px) {
+    .blocks {
+        grid-template-columns: repeat(3, minmax(240px, 310px));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blocks {
+        grid-template-columns: repeat(2, minmax(240px, 310px));
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .blocks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
