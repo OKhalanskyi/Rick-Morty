@@ -25,7 +25,7 @@ const Search = (props: ISearchProps) => {
                 <img className={styles.iconImage} src={searchIcon} />
             </span>
             <input
-                value={searchValue}
+                value={searchValue || ''}
                 onChange={change}
                 className={styles.searchInput}
                 placeholder="search..."
