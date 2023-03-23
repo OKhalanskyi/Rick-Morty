@@ -37,7 +37,7 @@ const MainPage = () => {
             <div style={{ position: 'absolute', right: '5%' }}>
                 <GoogleLogin
                     onSuccess={(credentialResponse) => {
-                        const decoded = jwt_decode(
+                        const decoded: any = jwt_decode(
                             `${credentialResponse.credential}`,
                         )
                         setName(decoded.name)

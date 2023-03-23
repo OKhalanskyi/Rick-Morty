@@ -13,7 +13,7 @@ const Search = (props: ISearchProps) => {
     const location = useLocation()
     const searchValue = `${localStorage.getItem('search')}`
 
-    const change = (event: ChangeEvent<HTMLSelectElement>) => {
+    const change = (event) => {
         const value = event.target.value
         localStorage.setItem('search', value)
         props.setSearch(value)
