@@ -1,0 +1,32 @@
+:root {
+    background-color: #ffffff;
+    display: flex;
+    min-width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+$font-family-roboto: 'Roboto';
+$font-family-karla: 'Karla';
+
+.f {
+    font-family: $font-family-roboto, sans-serif;
+    font-weight: 400;
+}
+.s {
+    font-family: $font-family-roboto, sans-serif;
+    font-weight: 500;
+}
+.t {
+    font-family: $font-family-roboto, sans-serif;
+    font-weight: 700;
+}
+.fo {
+    font-family: $font-family-karla, sans-serif;
+    font-weight: 700;
+}
