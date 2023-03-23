@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import MainPage from '../../pages/MainPage/MainPage'
+import CardDetailsPage from '../../pages/CardDetailsPage/CardDetailsPage'
 
 export const router = createBrowserRouter([
     {
@@ -8,6 +9,6 @@ export const router = createBrowserRouter([
     },
     {
         path: '/:id',
-        element: <h1>card</h1>,
+        element: <CardDetailsPage />,
     },
 ])
