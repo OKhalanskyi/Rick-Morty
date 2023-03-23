@@ -11,7 +11,7 @@ interface ISearchProps {
 
 const Search = (props: ISearchProps) => {
     const location = useLocation()
-    const searchValue = `${localStorage.getItem('search')}`
+    const searchValue = `${localStorage.getItem('search')}`||''
 
     const change = (event: any) => {
         const value = event.target.value
@@ -25,7 +25,7 @@ const Search = (props: ISearchProps) => {
                 <img className={styles.iconImage} src={searchIcon} />
             </span>
             <input
-                value={searchValue || ''}
+                value={searchValue}
                 onChange={change}
                 className={styles.searchInput}
                 placeholder="search..."
