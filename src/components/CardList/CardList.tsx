@@ -24,7 +24,7 @@ const CardList = (props: ICardListProps) => {
     const [currentPage, setCurrentPage] = useState<number>(pageParsedUrl)
     const { data, error, isLoading, refetch } = useFetchAllCardsQuery({
         page: currentPage || pageParsedUrl,
-        name: search || searchName,
+        name: search || searchName || '',
     })
 
     const [cards, setCards] = useState<ICard[]>()

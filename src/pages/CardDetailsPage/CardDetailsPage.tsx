@@ -8,7 +8,7 @@ import { useParams } from 'react-router'
 const CardDetailsPage = () => {
     const navigate = useNavigate()
     const { id } = useParams<{ id?: string }>()
-    const { data, isLoading, error } = useFetchCardByIdQuery(id)
+    const { data, isLoading, error } = useFetchCardByIdQuery(id || '')
     console.log(data)
 
     return (
