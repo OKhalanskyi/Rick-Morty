@@ -6,14 +6,14 @@ import queryString from 'query-string'
 
 interface ISearchProps {
     search: string
-    setSearch: (e) => void
+    setSearch: (e: any) => void
 }
 
 const Search = (props: ISearchProps) => {
     const location = useLocation()
     const searchValue = `${localStorage.getItem('search')}`
 
-    const change = (event) => {
+    const change = (event: any) => {
         const value = event.target.value
         localStorage.setItem('search', value)
         props.setSearch(value)
