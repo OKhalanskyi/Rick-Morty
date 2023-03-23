@@ -6,7 +6,7 @@ import queryString from 'query-string'
 
 interface ISearchProps {
     search: string
-    setSearch: (e: ChangeEvent<HTMLInputElement>) => void
+    setSearch: (e) => void
 }
 
 const Search = (props: ISearchProps) => {
